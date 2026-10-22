@@ -1,0 +1,28 @@
+schedule_timezone: America/Santiago
+schedule_hour: 0
+schedule_minute: 30
+schedule_start_month: 5
+schedule_start_day: 2
+schedule_end_month: 9
+schedule_end_day: 2
+season_start_month: 5
+season_start_day: 1
+catchup_days: 7
+retry_minutes: 15
+report_metadata:
+  enabled: true
+  database: FIC_CEREZAS_HORAS_FRIO
+  zone: ""
+  timezone: America/Santiago
+mongo:
+  host: 127.0.0.1
+  port: 27017
+  auth_database: admin
+  database: FIC_CEREZAS
+paths:
+  data_root: /data
+sensor_models: {}
+sensor_filters:
+  excluded_device_ids: []
+  excluded_device_patterns: []
+

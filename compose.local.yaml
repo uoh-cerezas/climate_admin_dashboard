@@ -1,0 +1,11 @@
+services:
+  climate-admin-dashboard:
+    ports:
+      - "${ADMIN_DASHBOARD_PORT:-8070}:8070"
+    networks:
+      - dashboard-network
+
+networks:
+  dashboard-network:
+    name: "${ADMIN_DASHBOARD_NETWORK:-fic-local-network}"
+

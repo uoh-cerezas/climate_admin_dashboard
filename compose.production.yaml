@@ -1,0 +1,13 @@
+services:
+  climate-admin-dashboard:
+    networks:
+      - fic-app-network
+    volumes:
+      - ${CLIMATE_CONFIG_HOST:-/home/uoh/cerezas_web_server/config/climate-reporting}:/config:ro
+      - ${CLIMATE_CONFIG_HOST:-/home/uoh/cerezas_web_server/config/climate-reporting}/pipeline.yaml:/config/pipeline.yaml:rw
+      - ${CLIMATE_CONFIG_HOST:-/home/uoh/cerezas_web_server/config/climate-reporting}/email.yaml:/config/email.yaml:rw
+
+networks:
+  fic-app-network:
+    external: true
+

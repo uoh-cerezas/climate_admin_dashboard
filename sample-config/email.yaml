@@ -1,0 +1,19 @@
+enabled: false
+delivery_method: smtp
+timezone: America/Santiago
+send_hour: 5
+send_minute: 0
+retry_minutes: 30
+sender:
+  display_name: UOH Cerezas
+  email: cerezas@uoh.cl
+smtp:
+  host: smtp.gmail.com
+  port: 587
+  username: cerezas@uoh.cl
+  password_env: GMAIL_APP_PASSWORD
+  use_starttls: true
+  timeout_seconds: 30
+global_cc: []
+sites: {}
+

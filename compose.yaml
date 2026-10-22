@@ -1,0 +1,10 @@
+services:
+  climate-admin-dashboard:
+    build: .
+    container_name: climate-admin-dashboard
+    environment:
+      CLIMATE_CONFIG_DIR: /config
+    volumes:
+      - ${CLIMATE_CONFIG_HOST:-./sample-config}:/config:rw
+    restart: unless-stopped
+

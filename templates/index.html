@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administración de reportería</title>
+  <link rel="icon" href="static/images/FIC_logo_pestana.png">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="UOH Cerezas">
+        <img src="static/images/UOHCerezas.jpg" alt="UOH Cerezas">
+      </a>
+      <div class="header-title">
+        <span class="eyebrow">UOH Cerezas</span>
+        <h1>Administración de reportería</h1>
+      </div>
+    </header>
+    <section id="validation" class="validation" aria-live="polite">Validando configuración…</section>
+    <section class="grid">
+      <article class="card readonly-card"><h2>Período de envío de correo</h2><div id="schedule"></div></article>
+      <article class="card editable"><h2>Envío de correo</h2><form id="email-form"></form></article>
+      <article class="card wide editable"><h2>Destinatarios por campo</h2><div id="sites" class="site-list"></div></article>
+    </section>
+  </main>
+  <script src="static/app.js" defer></script>
+</body>
+</html>
+
