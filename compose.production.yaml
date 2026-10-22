@@ -9,5 +9,6 @@ services:
 
 networks:
   fic-app-network:
+    name: "${ADMIN_DASHBOARD_NETWORK:-fic-app-network}"
     external: true
 
